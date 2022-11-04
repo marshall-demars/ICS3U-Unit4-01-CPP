@@ -9,26 +9,26 @@
 int main() {
     // This function uses while loops to add integers
 
-    int integer_as_integer;
+    int integerAsInteger;
     int counter = 0;
     int sum = 0;
-    std::string integer_as_string;
+    std::string integerAsString;
 
     // Input
     std::cout << "Input a positive number: ";
-    std::cin >> integer_as_string;
+    std::cin >> integerAsString;
     std::cout << "" << std::endl;
 
     // Process and Output
     try {
-        integer_as_integer = std::stoi(integer_as_string);
+        integerAsInteger = std::stoi(integerAsString);
 
-        while (counter < integer_as_integer) {
+        while (counter < integerAsInteger) {
             counter = counter + 1;
             sum = sum + counter;
         }
         std::cout << "The sum of all positive numbers from 1 to "
-            << integer_as_string << " is " << sum << "." << std::endl;
+            << integerAsString << " is " << sum << "." << std::endl;
     } catch (std::invalid_argument) {
         std::cout << "That was not a valid input." << std::endl;
     }
