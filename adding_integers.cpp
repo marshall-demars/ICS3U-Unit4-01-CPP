@@ -27,11 +27,11 @@ int main() {
             counter = counter + 1;
             sum = sum + counter;
         }
+        std::cout << "The sum of all positive numbers from 1 to "
+            << integer_as_string << " is " << sum << "." << std::endl;
     } catch (std::invalid_argument) {
         std::cout << "That was not a valid input." << std::endl;
     }
-    std::cout << "The sum of all positive numbers from 1 to "
-        << integer_as_string << " is " << sum << "." << std::endl;
 
     std::cout << ("\nDone.") << std::endl;
 }
